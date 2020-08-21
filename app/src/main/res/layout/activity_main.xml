@@ -15,19 +15,41 @@
 
         <EditText
             android:id="@+id/number1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
+            android:hint="num1"
+            android:inputType="numberSigned|number"
             android:textSize="30sp" />
 
 
+        <RadioGroup
+            android:id="@+id/radioOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radioPlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/plus" />
+
+            <RadioButton
+                android:id="@+id/radioMult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="times" />
+        </RadioGroup>
+
         <EditText
             android:id="@+id/number2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
+            android:hint="num2"
             android:textSize="30sp" />
 
     </LinearLayout>
